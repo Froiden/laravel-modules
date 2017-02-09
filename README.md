@@ -21,7 +21,9 @@
 - [Auto Scan Vendor Directory](#auto-scan-vendor-directory)
 - [Publishing Modules](#publishing-modules)
 
-`nwidart/laravel-modules` is a laravel package which created to manage your large laravel app using modules. Module is like a laravel package, it has some views, controllers or models. This package is supported and tested in Laravel 5.
+This is the copy of `nwidart/laravel-modules` is a laravel package which created to manage your large laravel app using modules. Module is like a laravel package, it has some views, controllers or models. This package is supported and tested in Laravel 5.
+We have modified to use for our personal usage. We have modified such that when creating the new modules.
+It creates controller,models, observers, migration according to `Froiden/laravel-rest-api` plugin
 
 This package is a re-published, re-organised and maintained version of [pingpong/modules](https://github.com/pingpong-labs/modules), which isn't maintained anymore. This package is used in [AsgardCMS](https://asgardcms.com/).
 
