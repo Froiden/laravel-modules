@@ -1,0 +1,70 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Modules\Core\Entities\BaseModel;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Jobs\Observers\$CLASS$Observer;
+
+class $CLASS$ extends BaseModel
+{
+// region Properties
+    protected $table = '$$LOWER_NAME$';
+
+    protected $default = [
+        'id',
+        'role'
+    ];
+
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+        'creator_id',
+        'company_id'
+    ];
+
+    protected $guarded = [
+        'created_at',
+        'updated_at',
+        'company_id',
+        'creator_id'
+    ];
+
+    protected $filterable = [
+        'id',
+        'role',
+        'status'
+    ];
+
+    protected $appends = [
+
+    ];
+
+    protected $dates = [
+        'created_at',
+        'updated_at'
+    ];
+
+    // endregion
+
+    //region Boot
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::observe($CLASS$Observer::class);
+
+        static::addGlobalScope(
+            'company',
+            function(Builder $builder) {
+                if (company()) {
+                    $builder->where('company_id', '=', company()->id);
+                }
+            }
+        );
+    }
+
+    //endregion
+
+}

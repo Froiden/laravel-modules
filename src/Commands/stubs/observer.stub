@@ -1,0 +1,28 @@
+<?php
+
+namespace Modules\$MODEL$\Observers;
+
+
+use Modules\$MODEL$\Entities\$MODEL$;
+
+
+class $MODEL$Observer
+{
+
+    public function saving($MODEL$ $$LOWER_NAME$)
+    {
+        //region Field conditions
+
+        if (company()) {
+            $$LOWER_NAME$->company_id = company()->id;
+        }
+
+        if (employee()) {
+            $$LOWER_NAME$->creator_id = employee()->id;
+        }
+
+        //endregion
+    }
+
+
+}
