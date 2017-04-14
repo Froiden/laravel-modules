@@ -2,7 +2,6 @@
 
 namespace $NAMESPACE$;
 
-
 use Modules\Core\Http\Requests\BaseRequest;
 
 class $CLASS$ extends BaseRequest
@@ -18,7 +17,6 @@ class $CLASS$ extends BaseRequest
         return true;
     }
 
-
     /**
      * Get the validation rules that apply to the request.
      *
@@ -28,9 +26,8 @@ class $CLASS$ extends BaseRequest
     public function rules()
     {
         return [
-            //
+
         ];
     }
-
 
 }

@@ -2,9 +2,7 @@
 
 namespace Modules\$MODEL$\Observers;
 
-
-use Modules\$MODEL$\Entities\$MODEL$;
-
+use Modules\$MODULE$\Entities\$MODEL$;
 
 class $MODEL$Observer
 {
@@ -23,6 +21,5 @@ class $MODEL$Observer
 
         //endregion
     }
-
 
 }

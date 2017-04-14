@@ -5,6 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateRecipeRecipesTable extends Migration
 {
+
     /**
      * Run the migrations.
      *

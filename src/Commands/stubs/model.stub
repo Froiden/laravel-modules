@@ -4,12 +4,12 @@ namespace $NAMESPACE$;
 
 use Modules\Core\Entities\BaseModel;
 use Illuminate\Database\Eloquent\Builder;
-use Modules\Jobs\Observers\$CLASS$Observer;
+use Modules\$MODULE$\Observers\$CLASS$Observer;
 
 class $CLASS$ extends BaseModel
 {
-// region Properties
-    protected $table = '$$LOWER_NAME$';
+    // region Properties
+    protected $table = '$LOWER_NAME$';
 
     protected $default = [
         'id',
