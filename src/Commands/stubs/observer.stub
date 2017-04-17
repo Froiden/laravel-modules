@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\$MODEL$\Observers;
+namespace Modules\$MODULE$\Observers;
 
 use Modules\$MODULE$\Entities\$MODEL$;
 

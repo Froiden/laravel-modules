@@ -3,12 +3,12 @@
 namespace $CLASS_NAMESPACE$;
 
 use Modules\Core\Http\Controllers\BaseController;
-use Modules\$MODEL$\Entities\$MODEL$;
-use Modules\$MODEL$\Http\Requests\$MODEL$\CreateRequest;
-use Modules\$MODEL$\Http\Requests\$MODEL$\DeleteRequest;
-use Modules\$MODEL$\Http\Requests\$MODEL$\IndexRequest;
-use Modules\$MODEL$\Http\Requests\$MODEL$\ShowRequest;
-use Modules\$MODEL$\Http\Requests\$MODEL$\UpdateRequest;
+use Modules\$MODULE$\Entities\$MODEL$;
+use Modules\$MODULE$\Http\Requests\$MODEL$\CreateRequest;
+use Modules\$MODULE$\Http\Requests\$MODEL$\DeleteRequest;
+use Modules\$MODULE$\Http\Requests\$MODEL$\IndexRequest;
+use Modules\$MODULE$\Http\Requests\$MODEL$\ShowRequest;
+use Modules\$MODULE$\Http\Requests\$MODEL$\UpdateRequest;
 
 class $CLASS$ extends BaseController
 {

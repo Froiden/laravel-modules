@@ -1,7 +1,7 @@
 <?php
 
 $factory->define(
-    \Modules\$MODEL$\Entities\$MODEL$::class,
+    \Modules\$MODULE$\Entities\$MODEL$::class,
     function(Faker\Generator $faker) {
         return [
             'title' => $faker->text(100),
